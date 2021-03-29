@@ -1,13 +1,13 @@
 @extends('layouts.admin.mains')
-@section('title','Edit Product')
-@section('page','Edit Product')
+@section('title','Edit User')
+@section('page','Edit User')
 @section('content')
 <div class="row">
 <div class="col-md-6">
           <!-- general form elements -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Product form</h3>
+              <h3 class="box-title">User form</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
@@ -15,7 +15,17 @@
               <div class="box-body">
                 <div class="form-group">
                   <label for="">Name*</label>
-                  <input type="text" class="form-control" name="name" placeholder="Enter name">
+                  <input type="text" class="form-control" name="name" placeholder="Enter Name">
+                </div>
+
+                <div class="form-group">
+                  <label for="">Email*</label>
+                  <input type="text" class="form-control" name="email" placeholder="Enter Email">
+                </div>
+
+                <div class="form-group">
+                  <label for="">Password*</label>
+                  <input type="password" class="form-control" name="password">
                 </div>
 
                 <div class="form-group">
@@ -24,20 +34,20 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="">Price*</label>
-                  <input type="text" class="form-control" name="price" placeholder="Enter price">
+                  <label for="">Address</label>
+                  <input type="text" class="form-control" name="Address" placeholder="Enter Address">
                 </div>
 
                 <div class="form-group">
-                  <label for="">Detail</label>
-                  <textarea name="detail" rows="3"  class="form-control"></textarea>
+                  <label for="">Number*</label>
+                  <input type="text" class="form-control" name="Number" placeholder="Enter Number">
                 </div>
-                
+
                 <div class="form-group">
-                  <label for="">Category*</label>
-                  <select name="cate_id" id="" class="form-control">
+                  <label for="">Role*</label>
+                  <select name="role" id="" class="form-control">
                         <option value=""></option>
-                        <option value="1">Category test</option>
+                        <option value="1">Menber</option>
                   </select>
                 </div>
 
@@ -51,7 +61,7 @@
 
               <div class="box-footer">
                 <button type="submit" class="btn btn-primary">Save</button>
-                <a href="{{route('list.pro')}}" class="btn btn-danger">Cancel</a>
+                <a href="{{route('list.user')}}" class="btn btn-danger">Cancel</a>
               </div>
             </form>
           </div>

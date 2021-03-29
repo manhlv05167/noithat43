@@ -30,9 +30,7 @@
 
                 <div class="form-group">
                   <label for="">Detail</label>
-                  <textarea name="detail" rows="3"  class="form-control">
-
-			      </textarea>
+                  <textarea name="detail" rows="3"  class="form-control"></textarea>
                 </div>
                 
                 <div class="form-group">

@@ -78,6 +78,42 @@ Route::prefix('imgpro')->group(function () {
     })->name('del.imgpro');
 });
 
+Route::prefix('user')->group(function () {
+    Route::get('/', function () {
+        return view('admin.user.index');
+    })->name('list.user');
+
+    Route::get('/add', function () {
+        return view('admin.user.add-form');
+    })->name('add.user');
+
+    Route::get('/edit', function () {
+        return view('admin.user.edit-form');
+    })->name('edit.user');
+
+    Route::get('/delete', function () {
+        echo "test del";
+    })->name('del.user');
+});
+
+Route::prefix('order')->group(function () {
+    Route::get('/', function () {
+        return view('admin.order.index');
+    })->name('list.order');
+
+    Route::get('/get', function () {
+        return view('admin.order.detail');
+    })->name('get.order');
+
+    Route::get('/edit', function () {
+        return view('admin.order.edit-form');
+    })->name('edit.order');
+
+    Route::get('/delete', function () {
+        echo "test del order";
+    })->name('del.order');
+});
+
 Route::prefix('slide')->group(function () {
     Route::get('/', function () {
         return view('admin.slide.index');
@@ -132,5 +168,19 @@ Route::prefix('type')->group(function () {
     })->name('del.type');
 });
 
+Route::prefix('setting')->group(function () {
+    Route::get('/', function () {
+        return view('admin.setting.index');
+    })->name('list.setting');
 
+    Route::get('/edit', function () {
+        return view('admin.setting.edit-form');
+    })->name('edit.setting');
+});
+
+Route::prefix('comment')->group(function () {
+    Route::get('/', function () {
+        return view('admin.comment.index');
+    })->name('list.comment');
+});
 ?>

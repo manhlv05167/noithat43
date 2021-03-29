@@ -63,6 +63,16 @@
             <li><a href="{{route('edit.slide')}}"><i class="fa fa-circle-o"></i>Edit Slideshow</a></li>
           </ul>
         </li>
+        <li>
+          <a href="{{route('list.comment')}}">
+            <span>Comment</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{route('list.setting')}}">
+            <span>Setting</span>
+          </a>
+        </li>
 
       </ul>
     </section>
