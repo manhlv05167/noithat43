@@ -28,7 +28,6 @@
 	                  <th>ID</th>
 	                  <th>Name</th>
 	                  <th>Detail</th>
-	                  <th>Status</th>
 	                  <th>Amount product</th>
 		              <th>
 		                <a href="{{route('add.cate')}}" class="btn btn-success">ADD</a>
@@ -38,7 +37,6 @@
 						<td> ID </td>
 						<td> name </td>
 						<td> detail </td>
-						<td> status </td>
 						<td> 
                             count product
 							<!-- @isset($model->products)

@@ -6,33 +6,64 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="active treeview">
-          <a href="#">
+        <li class="active">
+          <a href="{{route('dashboard')}}">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <span>Img Product</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            <li><a href="{{route('list.imgpro')}}"><i class="fa fa-circle-o"></i>List Img Product</a></li>
+            <li><a href="{{route('add.imgpro')}}"><i class="fa fa-circle-o"></i>Add Img Product</a></li>
+            <li><a href="{{route('edit.imgpro')}}"><i class="fa fa-circle-o"></i>Edit Img Product</a></li>
           </ul>
         </li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-pie-chart"></i>
-            <span>Charts</span>
+            <span>Size</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-            <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-            <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+            <li><a href="{{route('list.size')}}"><i class="fa fa-circle-o"></i>List Size</a></li>
+            <li><a href="{{route('add.size')}}"><i class="fa fa-circle-o"></i>Add Size</a></li>
+            <li><a href="{{route('edit.size')}}"><i class="fa fa-circle-o"></i>Edit Size</a></li>
           </ul>
         </li>
+        <li class="treeview">
+          <a href="#">
+            <span>Type</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{route('list.type')}}"><i class="fa fa-circle-o"></i>List Type</a></li>
+            <li><a href="{{route('add.type')}}"><i class="fa fa-circle-o"></i>Add Type</a></li>
+            <li><a href="{{route('edit.type')}}"><i class="fa fa-circle-o"></i>Edit Type</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <span>Slideshow</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{route('list.slide')}}"><i class="fa fa-circle-o"></i>List Slideshow</a></li>
+            <li><a href="{{route('add.slide')}}"><i class="fa fa-circle-o"></i>Add Slideshow</a></li>
+            <li><a href="{{route('edit.slide')}}"><i class="fa fa-circle-o"></i>Edit Slideshow</a></li>
+          </ul>
+        </li>
+
       </ul>
     </section>
     <!-- /.sidebar -->

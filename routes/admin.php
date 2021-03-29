@@ -95,4 +95,42 @@ Route::prefix('slide')->group(function () {
         echo "test del3";
     })->name('del.slide');
 });
+
+Route::prefix('size')->group(function () {
+    Route::get('/', function () {
+        return view('admin.size.index');
+    })->name('list.size');
+
+    Route::get('/add', function () {
+        return view('admin.size.add-form');
+    })->name('add.size');
+
+    Route::get('/edit', function () {
+        return view('admin.size.edit-form');
+    })->name('edit.size');
+
+    Route::get('/delete', function () {
+        echo "test del4";
+    })->name('del.size');
+});
+
+Route::prefix('type')->group(function () {
+    Route::get('/', function () {
+        return view('admin.type.index');
+    })->name('list.type');
+
+    Route::get('/add', function () {
+        return view('admin.type.add-form');
+    })->name('add.type');
+
+    Route::get('/edit', function () {
+        return view('admin.type.edit-form');
+    })->name('edit.type');
+
+    Route::get('/delete', function () {
+        echo "test del5";
+    })->name('del.type');
+});
+
+
 ?>
