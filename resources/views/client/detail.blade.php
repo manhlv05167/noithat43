@@ -7,19 +7,19 @@
     <title>Product detail</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="./owl/dist/assets/owl.carousel.min.css"> -->
-    <link rel="stylesheet" href="{!! asset('detail/owl/dist/assets/owl.carousel.min.css') !!}">
+    <link rel="stylesheet" href="{!! asset('client/detail/owl/dist/assets/owl.carousel.min.css') !!}">
 
     <!-- <link rel="stylesheet" href="./fonts/fontawesome/css/all.min.css"> -->
-    <link rel="stylesheet" href="{!! asset('detail/fonts/fontawesome/css/all.min.css') !!}">
+    <link rel="stylesheet" href="{!! asset('client/detail/fonts/fontawesome/css/all.min.css') !!}">
 
     <!-- <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="{!! asset('detail/bootstrap/css/bootstrap.min.css') !!}">
+    <link rel="stylesheet" href="{!! asset('client/detail/bootstrap/css/bootstrap.min.css') !!}">
 
     <!-- <link rel="stylesheet" href="./fonts/fontawesome/css/all.min.css"> -->
-    <link rel="stylesheet" href="{!! asset('detail/fonts/fontawesome/css/all.min.css') !!}">
+    <link rel="stylesheet" href="{!! asset('client/detail/fonts/fontawesome/css/all.min.css') !!}">
 
     <!-- <link rel="stylesheet" href="./css.css"> -->
-    <link rel="stylesheet" href="{!! asset('detail/css.css') !!}">
+    <link rel="stylesheet" href="{!! asset('client/detail/css.css') !!}">
 
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <!-- <link rel="stylesheet" href="{!! asset('plugins/css.css') !!}"> -->
@@ -588,13 +588,13 @@
         
 <!-- end footer -->
     <!-- <script src="./jquery.min.js"></script> -->
-<script src="{!! asset('detail/js/jquery.min.js') !!}"></script>
+<script src="{!! asset('client/detail/js/jquery.min.js') !!}"></script>
 
     <!-- <script src="./owl/dist/owl.carousel.min.js"></script> -->
-<script src="{!! asset('detail/owl/dist/owl.carousel.min.js') !!}"></script>
+<script src="{!! asset('client/detail/owl/dist/owl.carousel.min.js') !!}"></script>
 
     <!-- <script src="./main.js"></script> -->
-<script src="{!! asset('detail/js/main.js') !!}"></script>
+<script src="{!! asset('client/detail/js/main.js') !!}"></script>
 
 </body>
 </html>
